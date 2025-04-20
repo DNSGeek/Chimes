@@ -15,7 +15,7 @@ ws: requests.Session = requests.Session()
 def get_weather() -> Dict:
     logging.debug("Getting current weather")
     global ws
-    url = "https://api.openweathermap.org/data/2.5/weather?zip=95136,us&"
+    url = "https://api.openweathermap.org/data/2.5/weather?zip=XXXXX,us&"
     url += "appid=<MY_OPENWEATHERAPI_KEY_HERE"
     try:
         r = ws.get(
